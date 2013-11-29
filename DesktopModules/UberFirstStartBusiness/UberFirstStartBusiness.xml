@@ -1,0 +1,3091 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UberFirstStartBusiness</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for UberFirstStartBusiness
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberFirstStartBusinessModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from UberFirstStartBusinessModuleBase
+            
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.PanelError">
+            <summary>
+            PanelError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.PlaceHolderError">
+            <summary>
+            PlaceHolderError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.PanelBusinessEntry">
+            <summary>
+            PanelBusinessEntry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelBusinessName">
+            <summary>
+            LabelBusinessName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator1">
+            <summary>
+            RequiredFieldValidator1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxBusinessName">
+            <summary>
+            TextBoxBusinessName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelIsPublic">
+            <summary>
+            LabelIsPublic control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RadioButtonListIsPublic">
+            <summary>
+            RadioButtonListIsPublic control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelShortDescription">
+            <summary>
+            LabelShortDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator2">
+            <summary>
+            RequiredFieldValidator2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanel1">
+            <summary>
+            UpdatePanel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxShortDescription">
+            <summary>
+            TextBoxShortDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelBusinessMission">
+            <summary>
+            LabelBusinessMission control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator3">
+            <summary>
+            RequiredFieldValidator3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanel2">
+            <summary>
+            UpdatePanel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxBusinessMission">
+            <summary>
+            TextBoxBusinessMission control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelBusinessSlogan">
+            <summary>
+            LabelBusinessSlogan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator4">
+            <summary>
+            RequiredFieldValidator4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanel3">
+            <summary>
+            UpdatePanel3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxBusinessSlogan">
+            <summary>
+            TextBoxBusinessSlogan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelDescription">
+            <summary>
+            LabelDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator5">
+            <summary>
+            RequiredFieldValidator5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanel4">
+            <summary>
+            UpdatePanel4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxDescription">
+            <summary>
+            TextBoxDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelVision">
+            <summary>
+            LabelVision control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator6">
+            <summary>
+            RequiredFieldValidator6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanel5">
+            <summary>
+            UpdatePanel5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxVision">
+            <summary>
+            TextBoxVision control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelGoals">
+            <summary>
+            LabelGoals control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator7">
+            <summary>
+            RequiredFieldValidator7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanel6">
+            <summary>
+            UpdatePanel6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxGoals">
+            <summary>
+            TextBoxGoals control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelBusinessLogo">
+            <summary>
+            LabelBusinessLogo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanelLogo">
+            <summary>
+            UpdatePanelLogo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.FileUploadBusinessLogo">
+            <summary>
+            FileUploadBusinessLogo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelEmailAddress">
+            <summary>
+            LabelEmailAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator8">
+            <summary>
+            RequiredFieldValidator8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxEmailAddress">
+            <summary>
+            TextBoxEmailAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelPhone">
+            <summary>
+            LabelPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator9">
+            <summary>
+            RequiredFieldValidator9 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxPhone">
+            <summary>
+            TextBoxPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelFax">
+            <summary>
+            LabelFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator10">
+            <summary>
+            RequiredFieldValidator10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxFax">
+            <summary>
+            TextBoxFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.Label14">
+            <summary>
+            Label14 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator11">
+            <summary>
+            RequiredFieldValidator11 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanelCountry">
+            <summary>
+            UpdatePanelCountry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.DropDownListCountry">
+            <summary>
+            DropDownListCountry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator20">
+            <summary>
+            RequiredFieldValidator20 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanelState">
+            <summary>
+            UpdatePanelState control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.DropDownListState">
+            <summary>
+            DropDownListState control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelCity">
+            <summary>
+            LabelCity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator13">
+            <summary>
+            RequiredFieldValidator13 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanelCity">
+            <summary>
+            UpdatePanelCity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.DropDownListCity">
+            <summary>
+            DropDownListCity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelDistrict">
+            <summary>
+            LabelDistrict control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanel7">
+            <summary>
+            UpdatePanel7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.DropDownDistrict">
+            <summary>
+            DropDownDistrict control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelPostalCode">
+            <summary>
+            LabelPostalCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator14">
+            <summary>
+            RequiredFieldValidator14 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RegularExpressionValidator1">
+            <summary>
+            RegularExpressionValidator1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.UpdatePanel8">
+            <summary>
+            UpdatePanel8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxPostalCode">
+            <summary>
+            TextBoxPostalCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelAddress1">
+            <summary>
+            LabelAddress1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator17">
+            <summary>
+            RequiredFieldValidator17 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxAddress1">
+            <summary>
+            TextBoxAddress1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelAddress2">
+            <summary>
+            LabelAddress2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxAddress2">
+            <summary>
+            TextBoxAddress2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelWebsite">
+            <summary>
+            LabelWebsite control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.RequiredFieldValidator18">
+            <summary>
+            RequiredFieldValidator18 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxWebsite">
+            <summary>
+            TextBoxWebsite control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelFacebook">
+            <summary>
+            LabelFacebook control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxFacebook">
+            <summary>
+            TextBoxFacebook control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelLinkedIn">
+            <summary>
+            LabelLinkedIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxLinkedIn">
+            <summary>
+            TextBoxLinkedIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelTwitter">
+            <summary>
+            LabelTwitter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxTwitter">
+            <summary>
+            TextBoxTwitter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelYouTube">
+            <summary>
+            LabelYouTube control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxYouTube">
+            <summary>
+            TextBoxYouTube control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelGoogle">
+            <summary>
+            LabelGoogle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxGoogle">
+            <summary>
+            TextBoxGoogle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelBlog">
+            <summary>
+            LabelBlog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxBlog">
+            <summary>
+            TextBoxBlog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelShoppingCart">
+            <summary>
+            LabelShoppingCart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxShoppingCart">
+            <summary>
+            TextBoxShoppingCart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.LabelForum">
+            <summary>
+            LabelForum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.TextBoxForum">
+            <summary>
+            TextBoxForum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.PanelSubmit">
+            <summary>
+            PanelSubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.AddRelatedBusiness.ButtonSubmit">
+            <summary>
+            ButtonSubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.PanelBusinessSecondaryLocation">
+            <summary>
+            PanelBusinessSecondaryLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.LabelUBP">
+            <summary>
+            LabelUBP control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.Label1">
+            <summary>
+            Label1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.TextBoxSecondaryLocation">
+            <summary>
+            TextBoxSecondaryLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.TextBoxAddress1">
+            <summary>
+            TextBoxAddress1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.Label3">
+            <summary>
+            Label3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.TextBoxAddress2">
+            <summary>
+            TextBoxAddress2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.Label4">
+            <summary>
+            Label4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.TextBoxCity">
+            <summary>
+            TextBoxCity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.Label5">
+            <summary>
+            Label5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.TextBoxRegion">
+            <summary>
+            TextBoxRegion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.Label6">
+            <summary>
+            Label6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.TextBoxCountry">
+            <summary>
+            TextBoxCountry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.Label7">
+            <summary>
+            Label7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.TextBoxPostcode">
+            <summary>
+            TextBoxPostcode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.PanelSubmit">
+            <summary>
+            PanelSubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessSecondaryLocation.ButtonSubmit">
+            <summary>
+            ButtonSubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessUsers.LabelUBP">
+            <summary>
+            LabelUBP control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessUsers.Panel1">
+            <summary>
+            Panel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessUsers.DropDownListPrivilegeStatus">
+            <summary>
+            DropDownListPrivilegeStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessUsers.DropDownListSecondaryLocation">
+            <summary>
+            DropDownListSecondaryLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessUsers.Panel2">
+            <summary>
+            Panel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.BusinessUsers.ButtonSubmit">
+            <summary>
+            ButtonSubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.MultiViewCre">
+            <summary>
+            MultiViewCre control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.ViewCre">
+            <summary>
+            ViewCre control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.PanelError">
+            <summary>
+            PanelError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.PlaceHolderError">
+            <summary>
+            PlaceHolderError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.PanelBusinessEntry">
+            <summary>
+            PanelBusinessEntry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelBusinessName">
+            <summary>
+            LabelBusinessName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator1">
+            <summary>
+            RequiredFieldValidator1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxBusinessName">
+            <summary>
+            TextBoxBusinessName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelIsPublic">
+            <summary>
+            LabelIsPublic control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RadioButtonListIsPublic">
+            <summary>
+            RadioButtonListIsPublic control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelShortDescription">
+            <summary>
+            LabelShortDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator2">
+            <summary>
+            RequiredFieldValidator2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanel1">
+            <summary>
+            UpdatePanel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxShortDescription">
+            <summary>
+            TextBoxShortDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelBusinessMission">
+            <summary>
+            LabelBusinessMission control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator3">
+            <summary>
+            RequiredFieldValidator3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanel2">
+            <summary>
+            UpdatePanel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxBusinessMission">
+            <summary>
+            TextBoxBusinessMission control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelBusinessSlogan">
+            <summary>
+            LabelBusinessSlogan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator4">
+            <summary>
+            RequiredFieldValidator4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanel3">
+            <summary>
+            UpdatePanel3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxBusinessSlogan">
+            <summary>
+            TextBoxBusinessSlogan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelDescription">
+            <summary>
+            LabelDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator5">
+            <summary>
+            RequiredFieldValidator5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanel4">
+            <summary>
+            UpdatePanel4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxDescription">
+            <summary>
+            TextBoxDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelVision">
+            <summary>
+            LabelVision control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator6">
+            <summary>
+            RequiredFieldValidator6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanel5">
+            <summary>
+            UpdatePanel5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxVision">
+            <summary>
+            TextBoxVision control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelGoals">
+            <summary>
+            LabelGoals control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator7">
+            <summary>
+            RequiredFieldValidator7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanel6">
+            <summary>
+            UpdatePanel6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxGoals">
+            <summary>
+            TextBoxGoals control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelBusinessLogo">
+            <summary>
+            LabelBusinessLogo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanelLogo">
+            <summary>
+            UpdatePanelLogo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.FileUploadBusinessLogo">
+            <summary>
+            FileUploadBusinessLogo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelEmailAddress">
+            <summary>
+            LabelEmailAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator8">
+            <summary>
+            RequiredFieldValidator8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxEmailAddress">
+            <summary>
+            TextBoxEmailAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelPhone">
+            <summary>
+            LabelPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator9">
+            <summary>
+            RequiredFieldValidator9 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxPhone">
+            <summary>
+            TextBoxPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelFax">
+            <summary>
+            LabelFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator10">
+            <summary>
+            RequiredFieldValidator10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxFax">
+            <summary>
+            TextBoxFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.Label14">
+            <summary>
+            Label14 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator11">
+            <summary>
+            RequiredFieldValidator11 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanelCountry">
+            <summary>
+            UpdatePanelCountry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.DropDownListCountry">
+            <summary>
+            DropDownListCountry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator20">
+            <summary>
+            RequiredFieldValidator20 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanelState">
+            <summary>
+            UpdatePanelState control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.DropDownListState">
+            <summary>
+            DropDownListState control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelCity">
+            <summary>
+            LabelCity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator13">
+            <summary>
+            RequiredFieldValidator13 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanelCity">
+            <summary>
+            UpdatePanelCity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.DropDownListCity">
+            <summary>
+            DropDownListCity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelDistrict">
+            <summary>
+            LabelDistrict control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator12">
+            <summary>
+            RequiredFieldValidator12 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.UpdatePanel7">
+            <summary>
+            UpdatePanel7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.DropDownDistrict">
+            <summary>
+            DropDownDistrict control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelPostalCode">
+            <summary>
+            LabelPostalCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator14">
+            <summary>
+            RequiredFieldValidator14 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RegularExpressionValidator1">
+            <summary>
+            RegularExpressionValidator1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxPostalCode">
+            <summary>
+            TextBoxPostalCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelAddress1">
+            <summary>
+            LabelAddress1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator17">
+            <summary>
+            RequiredFieldValidator17 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxAddress1">
+            <summary>
+            TextBoxAddress1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelAddress2">
+            <summary>
+            LabelAddress2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxAddress2">
+            <summary>
+            TextBoxAddress2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelWebsite">
+            <summary>
+            LabelWebsite control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.RequiredFieldValidator18">
+            <summary>
+            RequiredFieldValidator18 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxWebsite">
+            <summary>
+            TextBoxWebsite control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelFacebook">
+            <summary>
+            LabelFacebook control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxFacebook">
+            <summary>
+            TextBoxFacebook control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelLinkedIn">
+            <summary>
+            LabelLinkedIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxLinkedIn">
+            <summary>
+            TextBoxLinkedIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelTwitter">
+            <summary>
+            LabelTwitter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxTwitter">
+            <summary>
+            TextBoxTwitter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelYouTube">
+            <summary>
+            LabelYouTube control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxYouTube">
+            <summary>
+            TextBoxYouTube control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelGoogle">
+            <summary>
+            LabelGoogle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxGoogle">
+            <summary>
+            TextBoxGoogle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelBlog">
+            <summary>
+            LabelBlog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxBlog">
+            <summary>
+            TextBoxBlog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelShoppingCart">
+            <summary>
+            LabelShoppingCart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxShoppingCart">
+            <summary>
+            TextBoxShoppingCart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.LabelForum">
+            <summary>
+            LabelForum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.TextBoxForum">
+            <summary>
+            TextBoxForum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.PanelSubmit">
+            <summary>
+            PanelSubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.ButtonSubmit">
+            <summary>
+            ButtonSubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.ViewRev">
+            <summary>
+            ViewRev control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.PanelR">
+            <summary>
+            PanelR control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.Controls.EditBusinessProfile.DataListContact">
+            <summary>
+            DataListContact control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.Edit">
+            <summary>
+            EditUberFirstStartBusiness class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditUberFirstStartBusiness class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from UberFirstStartBusinessModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.UberFirstStartBusiness.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from UberFirstStartBusinessSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberFirstStartBusinessSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from UberFirstStartBusinessSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.UberFirstStartBusiness.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.UberFirstStartBusiness.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.NAICSSectorDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessUserLookUpDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessSecondaryLocationDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessProfilesByIndustryDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_CountriesDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_RegionsDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_SubregionsDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_Country_StatesDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberJobPostingDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UsersDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessUsersDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UserProfileDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.ProfileGeneralInfoDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessProfileDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.NAICSSectorRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessUserLookUpRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessSecondaryLocationRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessProfilesByIndustryRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_CountriesRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_RegionsRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_SubregionsRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_Country_StatesRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberJobPostingRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UsersRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessUsersRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UserProfileRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.ProfileGeneralInfoRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessProfileRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.NAICSSectorRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessUserLookUpRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessSecondaryLocationRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessProfilesByIndustryRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_CountriesRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_RegionsRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_SubregionsRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.Geo_Country_StatesRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberJobPostingRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UsersRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessUsersRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UserProfileRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.ProfileGeneralInfoRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet.UberBusinessProfileRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.NAICSSectorTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.UberBusinessUserLookUpTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.UberBusinessSecondaryLocationTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.UberBusinessProfilesByIndustryTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.Geo_CountriesTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.Geo_RegionsTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.Geo_SubregionsTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.Geo_Country_StatesTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.UberJobPostingTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.UsersTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.UberBusinessUsersTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.UserProfileTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.ProfileGeneralInfoTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.UberBusinessProfileTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.TableAdapterManager">
+             <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.TableAdapterManager.UpdateAll(DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSet)">
+             <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+             <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.UberFirstStartBusiness.UberBusinessProfileDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+             <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Panel1">
+            <summary>
+            Panel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label1">
+            <summary>
+            Label1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidatorName">
+            <summary>
+            RequiredFieldValidatorName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.TextBoxBusinessName">
+            <summary>
+            TextBoxBusinessName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.LabelUserName">
+            <summary>
+            LabelUserName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.LabelError">
+            <summary>
+            LabelError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.ButtonCreateBP">
+            <summary>
+            ButtonCreateBP control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label3">
+            <summary>
+            Label3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.LabelTotal">
+            <summary>
+            LabelTotal control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.LabelVailible">
+            <summary>
+            LabelVailible control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label4">
+            <summary>
+            Label4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.LabelLocation">
+            <summary>
+            LabelLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.ButtonAddLocation">
+            <summary>
+            ButtonAddLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label5">
+            <summary>
+            Label5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.LabelRelatedBusiness">
+            <summary>
+            LabelRelatedBusiness control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.ButtonRelatedBusiness">
+            <summary>
+            ButtonRelatedBusiness control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Panel3">
+            <summary>
+            Panel3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label10">
+            <summary>
+            Label10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListBusinessName">
+            <summary>
+            DropDownListBusinessName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label11">
+            <summary>
+            Label11 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator1">
+            <summary>
+            RequiredFieldValidator1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.TextBoxPhone">
+            <summary>
+            TextBoxPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label12">
+            <summary>
+            Label12 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator3">
+            <summary>
+            RequiredFieldValidator3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.TextBoxUnit">
+            <summary>
+            TextBoxUnit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label15">
+            <summary>
+            Label15 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator4">
+            <summary>
+            RequiredFieldValidator4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.TextBoxStreet">
+            <summary>
+            TextBoxStreet control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label16">
+            <summary>
+            Label16 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator2">
+            <summary>
+            RequiredFieldValidator2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.UpdatePanel1">
+            <summary>
+            UpdatePanel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListCountry">
+            <summary>
+            DropDownListCountry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label19">
+            <summary>
+            Label19 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator5">
+            <summary>
+            RequiredFieldValidator5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.UpdatePanel2">
+            <summary>
+            UpdatePanel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListState">
+            <summary>
+            DropDownListState control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label20">
+            <summary>
+            Label20 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator6">
+            <summary>
+            RequiredFieldValidator6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.UpdatePanel3">
+            <summary>
+            UpdatePanel3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListCity">
+            <summary>
+            DropDownListCity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label21">
+            <summary>
+            Label21 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator7">
+            <summary>
+            RequiredFieldValidator7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.TextBoxPostalCode">
+            <summary>
+            TextBoxPostalCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label22">
+            <summary>
+            Label22 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator8">
+            <summary>
+            RequiredFieldValidator8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.UpdatePanel4">
+            <summary>
+            UpdatePanel4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListSector">
+            <summary>
+            DropDownListSector control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label23">
+            <summary>
+            Label23 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator9">
+            <summary>
+            RequiredFieldValidator9 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.UpdatePanel5">
+            <summary>
+            UpdatePanel5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListSubsector">
+            <summary>
+            DropDownListSubsector control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label24">
+            <summary>
+            Label24 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator10">
+            <summary>
+            RequiredFieldValidator10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.UpdatePanel6">
+            <summary>
+            UpdatePanel6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListGroup">
+            <summary>
+            DropDownListGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label25">
+            <summary>
+            Label25 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator11">
+            <summary>
+            RequiredFieldValidator11 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.UpdatePanel7">
+            <summary>
+            UpdatePanel7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListIndustry">
+            <summary>
+            DropDownListIndustry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label26">
+            <summary>
+            Label26 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator12">
+            <summary>
+            RequiredFieldValidator12 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.UpdatePanel8">
+            <summary>
+            UpdatePanel8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListSepecificIndustry">
+            <summary>
+            DropDownListSepecificIndustry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label27">
+            <summary>
+            Label27 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator13">
+            <summary>
+            RequiredFieldValidator13 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.TextBoxWebsite">
+            <summary>
+            TextBoxWebsite control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label28">
+            <summary>
+            Label28 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RequiredFieldValidator14">
+            <summary>
+            RequiredFieldValidator14 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.RadioButtonListPublic">
+            <summary>
+            RadioButtonListPublic control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.ButtonSave">
+            <summary>
+            ButtonSave control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Panel2">
+            <summary>
+            Panel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label6">
+            <summary>
+            Label6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.DropDownListBusinesses">
+            <summary>
+            DropDownListBusinesses control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label7">
+            <summary>
+            Label7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label8">
+            <summary>
+            Label8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label9">
+            <summary>
+            Label9 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label17">
+            <summary>
+            Label17 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label18">
+            <summary>
+            Label18 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label13">
+            <summary>
+            Label13 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.Label14">
+            <summary>
+            Label14 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.ButtonAddBusinessUser">
+            <summary>
+            ButtonAddBusinessUser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.UberFirstStartBusiness.View.ButtonamagerBusinessUser">
+            <summary>
+            ButtonamagerBusinessUser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

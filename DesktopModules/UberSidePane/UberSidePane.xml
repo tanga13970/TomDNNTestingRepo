@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UberSidePane</name>
+    </assembly>
+    <members>
+        <member name="T:Uberistic.Modules.UberSidePane.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for UberSidePane
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Components.FeatureController.ExportModule(System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ExportModule implements the IPortable ExportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be exported</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Components.FeatureController.ImportModule(System.Int32,System.String,System.String,System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ImportModule implements the IPortable ImportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be imported</param>
+            <param name="Content">The content to be imported</param>
+            <param name="Version">The version of the module to be imported</param>
+            <param name="UserId">The Id of the user performing the import</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Components.FeatureController.GetSearchItems(DotNetNuke.Entities.Modules.ModuleInfo)">
+            -----------------------------------------------------------------------------
+            <summary>
+            GetSearchItems implements the ISearchable Interface
+            </summary>
+            <param name="ModInfo">The ModuleInfo for the module to be Indexed</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Components.FeatureController.UpgradeModule(System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpgradeModule implements the IUpgradeable Interface
+            </summary>
+            <param name="Version">The current version of the module</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.DataSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.DataSet.UberBusinessProfileDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.DataSet.UberBusinessProfileRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.DataSet.UberBusinessProfileRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.DataSetTableAdapters.UberBusinessProfileTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.DataSetTableAdapters.TableAdapterManager">
+             <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Data.DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Uberistic.Modules.UberSidePane.Data.DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Data.DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Uberistic.Modules.UberSidePane.Data.DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Data.DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Uberistic.Modules.UberSidePane.Data.DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Data.DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Data.DataSetTableAdapters.TableAdapterManager.UpdateAll(Uberistic.Modules.UberSidePane.Data.DataSet)">
+             <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+             <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+             <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:Uberistic.Modules.TextModule3.LogoHandler">
+            <summary>
+            Summary description for LogoHandler
+            </summary>
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditTextModule3 class is used to manage content
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Uberistic.Modules.UberSidePane.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The ViewTextModule3 class displays the content
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.Panel1">
+            <summary>
+            Panel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.UpdatePanel1">
+            <summary>
+            UpdatePanel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.ImageLogo">
+            <summary>
+            ImageLogo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.LiteralSlogan">
+            <summary>
+            LiteralSlogan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.LabelBusinessName">
+            <summary>
+            LabelBusinessName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.LabelAddress">
+            <summary>
+            LabelAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolderPhone">
+            <summary>
+            PlaceHolderPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.LabelPhone">
+            <summary>
+            LabelPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolderEmail">
+            <summary>
+            PlaceHolderEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinkEmail">
+            <summary>
+            HyperLinkEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinkWebsite">
+            <summary>
+            HyperLinkWebsite control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolder1">
+            <summary>
+            PlaceHolder1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.Image2">
+            <summary>
+            Image2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinktwitter">
+            <summary>
+            HyperLinktwitter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolder2">
+            <summary>
+            PlaceHolder2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.Image3">
+            <summary>
+            Image3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinkfacebook">
+            <summary>
+            HyperLinkfacebook control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolder3">
+            <summary>
+            PlaceHolder3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.Image4">
+            <summary>
+            Image4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinklinkedin">
+            <summary>
+            HyperLinklinkedin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolder4">
+            <summary>
+            PlaceHolder4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.Image5">
+            <summary>
+            Image5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinkYouToBu">
+            <summary>
+            HyperLinkYouToBu control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolder5">
+            <summary>
+            PlaceHolder5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.Image6">
+            <summary>
+            Image6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinkGoogle">
+            <summary>
+            HyperLinkGoogle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolder6">
+            <summary>
+            PlaceHolder6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.Image7">
+            <summary>
+            Image7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinkBlog">
+            <summary>
+            HyperLinkBlog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolder7">
+            <summary>
+            PlaceHolder7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.Image1">
+            <summary>
+            Image1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinkShoppingCart">
+            <summary>
+            HyperLinkShoppingCart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.PlaceHolder8">
+            <summary>
+            PlaceHolder8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.Image8">
+            <summary>
+            Image8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Uberistic.Modules.UberSidePane.View.HyperLinkForum">
+            <summary>
+            HyperLinkForum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Uberistic.Modules.UberSidePane.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

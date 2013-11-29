@@ -1,0 +1,188 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path />
+      <name>Edit.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Edit.ascx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>Edit.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>License.txt</name>
+    </file>
+    <file>
+      <path />
+      <name>module.css</name>
+    </file>
+    <file>
+      <path />
+      <name>ReleaseNotes.txt</name>
+    </file>
+    <file>
+      <path />
+      <name>Settings.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Settings.ascx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>Settings.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>UberBusinessProfileDataSet.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>UberBusinessProfileDataSet.Designer.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>UberFirstStartBusiness.csproj</name>
+    </file>
+    <file>
+      <path />
+      <name>UberFirstStartBusiness.dnn</name>
+    </file>
+    <file>
+      <path />
+      <name>UberFirstStartBusiness.sln</name>
+    </file>
+    <file>
+      <path />
+      <name>UberFirstStartBusiness.xml</name>
+    </file>
+    <file>
+      <path />
+      <name>UberFirstStartBusinessModuleBase.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>UberFirstStartBusinessSettingsBase.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>View.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>View.ascx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>View.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>Edit.ascx.resx</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>Settings.ascx.resx</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>View.ascx.resx</name>
+    </file>
+    <file>
+      <path>BuildScripts/</path>
+      <name>ModulePackage.targets</name>
+    </file>
+    <file>
+      <path>BuildScripts/</path>
+      <name>MSBuild.Community.Tasks.Targets</name>
+    </file>
+    <file>
+      <path>Components/</path>
+      <name>FeatureController.cs</name>
+    </file>
+    <file>
+      <path>Components/</path>
+      <name>UberJava.js</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>AddRelatedBusiness.ascx</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>AddRelatedBusiness.ascx.cs</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>AddRelatedBusiness.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>BusinessSecondaryLocation.ascx</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>BusinessSecondaryLocation.ascx.cs</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>BusinessSecondaryLocation.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>BusinessUsers.ascx</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>BusinessUsers.ascx.cs</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>BusinessUsers.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>EditBusinessProfile.ascx</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>EditBusinessProfile.ascx.cs</name>
+    </file>
+    <file>
+      <path>Controls/</path>
+      <name>EditBusinessProfile.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path>Data/</path>
+      <name>DataProvider.cs</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>Documentation.css</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>Documentation.html</name>
+    </file>
+    <file>
+      <path>Model/</path>
+      <name>DA.cs</name>
+    </file>
+    <file>
+      <path>Model/EClass/</path>
+      <name>BusinessProfile.cs</name>
+    </file>
+    <file>
+      <path>Properties/</path>
+      <name>AssemblyInfo.cs</name>
+    </file>
+    <file>
+      <path>Providers/DataProviders/SqlDataProvider/</path>
+      <name>SqlDataProvider.cs</name>
+    </file>
+  </files>
+</dotnetnuke>

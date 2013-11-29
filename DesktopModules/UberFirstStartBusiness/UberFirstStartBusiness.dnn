@@ -1,0 +1,125 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="UberFirstStartBusiness" type="Module" version="00.00.01">
+      <friendlyName>UberFirstStartBusiness</friendlyName>
+      <description>DotNetNuke Corporation UberFirstStartBusiness module</description>
+      <iconFile>Images/icon_extensions.gif</iconFile>
+      <owner>
+        <name>DotNetNuke Corporation</name>
+        <organization>DotNetNuke Corporation</organization>
+        <url>http://www.dotnetnuke.com</url>
+        <email>training@dotnetnuke.com</email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">06.00.00</dependency>
+      </dependencies>
+
+      <components>
+        <component type="Script">
+          <scripts>
+            <basePath>DesktopModules\UberFirstStartBusiness</basePath>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>00.00.01.SqlDataProvider</name>
+              <version>00.00.01</version>
+            </script>
+            <script type="UnInstall">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>Uninstall.SqlDataProvider</name>
+              <version>00.00.01</version>
+            </script>
+          </scripts>
+        </component>
+
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/UberFirstStartBusiness</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <component type="Module">
+          <desktopModule>
+            <moduleName>UberFirstStartBusiness</moduleName>
+            <foldername>UberFirstStartBusiness</foldername>
+            <businessControllerClass>DotNetNuke.Modules.UberFirstStartBusiness.Components.FeatureController</businessControllerClass>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>UberFirstStartBusiness</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/UberFirstStartBusiness/View.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>EditBusinessProfile</controlKey>
+                    <controlSrc>DesktopModules/UberFirstStartBusiness/Controls/EditBusinessProfile.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Edit Business Profile</controlTitle>
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                    <supportsPopUps>false</supportsPopUps>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>BusinessSecondaryLocation</controlKey>
+                    <controlSrc>DesktopModules/UberFirstStartBusiness/Controls/BusinessSecondaryLocation.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Business Secondary Location</controlTitle>
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                    <supportsPopUps>false</supportsPopUps>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Edit</controlKey>
+                    <controlSrc>DesktopModules/UberFirstStartBusiness/Edit.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Edit Content</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                    <supportsPopUps>True</supportsPopUps>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>DesktopModules/UberFirstStartBusiness/Settings.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>UberFirstStartBusiness Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <basePath>bin</basePath>
+            <assembly>
+              <name>UberFirstStartBusiness.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

@@ -1,0 +1,156 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path />
+      <name>delicious.png</name>
+    </file>
+    <file>
+      <path />
+      <name>Edit.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Edit.ascx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>Edit.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>facebook.png</name>
+    </file>
+    <file>
+      <path />
+      <name>flickr.png</name>
+    </file>
+    <file>
+      <path />
+      <name>linkedin.png</name>
+    </file>
+    <file>
+      <path />
+      <name>listing-sabre-logo.png</name>
+    </file>
+    <file>
+      <path />
+      <name>LogoHandler.ashx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>module.css</name>
+    </file>
+    <file>
+      <path />
+      <name>mydetails.png</name>
+    </file>
+    <file>
+      <path />
+      <name>Settings.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Settings.ascx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>Settings.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>stumbleupon.png</name>
+    </file>
+    <file>
+      <path />
+      <name>TextModule3.xml</name>
+    </file>
+    <file>
+      <path />
+      <name>twitter.png</name>
+    </file>
+    <file>
+      <path />
+      <name>uberistic_logo.png</name>
+    </file>
+    <file>
+      <path />
+      <name>UberSidePane.csproj</name>
+    </file>
+    <file>
+      <path />
+      <name>UberSidePane.sln</name>
+    </file>
+    <file>
+      <path />
+      <name>UberSidePane.xml</name>
+    </file>
+    <file>
+      <path />
+      <name>UberSidePaneModuleBase.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>UberSidePaneSettingsBase.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>View.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>View.ascx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>View.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>Edit.ascx.resx</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>Settings.ascx.resx</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>View.ascx.resx</name>
+    </file>
+    <file>
+      <path>BuildScripts/</path>
+      <name>ModulePackage.targets</name>
+    </file>
+    <file>
+      <path>BuildScripts/</path>
+      <name>MSBuild.Community.Tasks.Targets</name>
+    </file>
+    <file>
+      <path>Components/</path>
+      <name>FeatureController.cs</name>
+    </file>
+    <file>
+      <path>Data/</path>
+      <name>DataProvider.cs</name>
+    </file>
+    <file>
+      <path>Data/</path>
+      <name>DataSet.Designer.cs</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>Documentation.css</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>Documentation.html</name>
+    </file>
+    <file>
+      <path>Properties/</path>
+      <name>AssemblyInfo.cs</name>
+    </file>
+    <file>
+      <path>Providers/DataProviders/SqlDataProvider/</path>
+      <name>SqlDataProvider.cs</name>
+    </file>
+  </files>
+</dotnetnuke>
